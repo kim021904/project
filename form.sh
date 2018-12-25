@@ -1,0 +1,11 @@
+#echo form
+apt-get -y install zip unzip
+cd /home/vps/public_html/asset
+wget https://raw.githubusercontent.com/kim021904/project/master/kimvpn.tar
+unzip kimvpn.tar
+rm -f kimvpn.tar
+chown -R www-data:www-data /home/vps/public_html/asset
+chmod -R g+rw /home/vps/public_html/asset
+
+#echo install form
+wget -O /home/vps/public_html/view/login.html "https://raw.githubusercontent.com/kim021904/project/master/login.html" && rm /home/vps/public_html/tmp/*
