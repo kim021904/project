@@ -1,9 +1,9 @@
 #echo form
 apt-get -y install zip unzip
 cd /home/vps/public_html/asset
-wget https://raw.githubusercontent.com/kim021904/project/master/kimvpn.tar
-unzip kimvpn.tar
-rm -f kimvpn.tar
+wget https://raw.githubusercontent.com/kim021904/project/master/kimvpn.zip
+unzip kimvpn.zip
+rm -f kimvpn.zip
 chown -R www-data:www-data /home/vps/public_html/asset
 chmod -R g+rw /home/vps/public_html/asset
 
